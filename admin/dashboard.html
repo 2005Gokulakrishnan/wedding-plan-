@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Royal Wedding Decor</title>
+  <link rel="stylesheet" href="admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Royal Admin</h2>
+    <nav>
+      <a href="#heroSection">Hero</a>
+      <a href="#gallerySection">Gallery</a>
+      <a href="#themeSection">Theme</a>
+      <a href="../index.html" target="_blank">View Website</a>
+    </nav>
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard-main">
+    <h1>Website Content Manager</h1>
+
+    <!-- Hero Section -->
+    <section class="dashboard-card" id="heroSection">
+      <h3>Edit Hero Section</h3>
+
+      <label>Hero Title</label>
+      <input type="text" id="heroTitleInput">
+
+      <label>Hero Subtitle</label>
+      <textarea id="heroSubtitleInput"></textarea>
+
+      <label>CTA Button Text</label>
+      <input type="text" id="heroBtnTextInput">
+
+      <label>CTA Button Link</label>
+      <input type="text" id="heroBtnLinkInput">
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="dashboard-card" id="gallerySection">
+      <h3>Edit Gallery Images</h3>
+
+      <label>Gallery Image 1 URL</label>
+      <input type="text" id="gallery1">
+
+      <label>Gallery Image 2 URL</label>
+      <input type="text" id="gallery2">
+
+      <label>Gallery Image 3 URL</label>
+      <input type="text" id="gallery3">
+    </section>
+
+    <!-- Theme Section -->
+    <section class="dashboard-card" id="themeSection">
+      <h3>Theme Settings</h3>
+
+      <label>Primary Theme Color</label>
+      <input type="color" id="primaryColorInput">
+    </section>
+
+    <!-- Save -->
+    <button id="saveBtn" class="save-btn">Save Changes</button>
+
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
